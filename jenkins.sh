@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out code...'
-                git branch: 'staging', url: 'https://github.com/Prathima-R/My_first-task-.git'
+                git branch: 'main', url: 'https://github.com/Prathima-R/My_first-task-.git'
             }
         }
         stage('Build') {
@@ -30,10 +30,10 @@ pipeline {
 
     post {
         success {
-            echo 'Pipeline executed successfully ✅'
+            echo 'Pipeline executed successfully'
         }
         failure {
-            echo 'Pipeline failed ❌'
+            echo 'Pipeline failed'
         }
     }
 }
