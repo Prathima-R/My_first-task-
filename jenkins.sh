@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out code...'
-                git branch: 'staging', url: ''
+                git branch: 'staging', url: 'https://github.com/Prathima-R/My_first-task-.git'
             }
         }
         stage('Build') {
